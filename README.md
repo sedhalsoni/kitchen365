@@ -1,4 +1,4 @@
-# Kitchen365 🍽️
+# Kitchen365
 
 **Kitchen365** is a full-stack application designed to manage and showcase kitchen products using a microservice architecture. It includes:
 
