@@ -1,0 +1,9 @@
+[submodule "backend-microservices/auth-service"]
+	path = backend-microservices/auth-service
+	url = https://github.com/sedhalsoni/auth-service.git
+[submodule "backend-microservices/product-service"]
+	path = backend-microservices/product-service
+	url = https://github.com/sedhalsoni/product-service.git
+[submodule "product-catlog"]
+	path = product-catlog
+	url = https://github.com/sedhalsoni/product-catlog.git

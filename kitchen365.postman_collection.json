@@ -1,0 +1,137 @@
+{
+	"info": {
+		"_postman_id": "467aabd3-618b-473c-95a1-2aabe2b23bce",
+		"name": "kitchen365",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1343483"
+	},
+	"item": [
+		{
+			"name": "products",
+			"item": [
+				{
+					"name": "Add product By tenantId",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNvbmlzZWRoYWxAZ21haWwuY29tIiwidGVuYW50SWQiOiJmMWE5MjVhYS1mMDM4LTRhZjQtOTNkYy04ZjlmYmU0ZGZiZWMiLCJpYXQiOjE3NDQ5NTYzOTgsImV4cCI6MTc0NTA0Mjc5OH0.j5rZeleNGgaHzd4q_5KKMJl3232nV2uLe5uluGZEAZw",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"youtube\",\n  \"price\": 55.99,\n  \"description\": \"A New youtube.\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL_PRODUCT}}products/create-product",
+							"host": [
+								"{{API_URL_PRODUCT}}products"
+							],
+							"path": [
+								"create-product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get products By TenantId",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNvbmlzZWRoYWxAZ21haWwuY29tIiwidGVuYW50SWQiOiJmMWE5MjVhYS1mMDM4LTRhZjQtOTNkYy04ZjlmYmU0ZGZiZWMiLCJpYXQiOjE3NDQ5NTYzOTgsImV4cCI6MTc0NTA0Mjc5OH0.j5rZeleNGgaHzd4q_5KKMJl3232nV2uLe5uluGZEAZw",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{API_URL_PRODUCT}}products",
+							"host": [
+								"{{API_URL_PRODUCT}}products"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"email\": \"sedhal@gmail.com\",\n  \"password\": \"sedhal@123\",\n  \"tenantName\": \"sedhal\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{API_URL_TENENT}}register",
+					"host": [
+						"{{API_URL_TENENT}}register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all tenents",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{API_URL_TENENT}}tenants",
+					"host": [
+						"{{API_URL_TENENT}}tenants"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"email\": \"sedhal@gmail.com\",\n  \"password\": \"sedhal@123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{API_URL_TENENT}}ogin",
+					"host": [
+						"{{API_URL_TENENT}}ogin"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
